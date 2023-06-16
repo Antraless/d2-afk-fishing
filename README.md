@@ -1,1 +1,1 @@
-# d2-afk-fishing
+# For support: https://discord.gg/jwVVmBRd
