@@ -1,6 +1,6 @@
 # For support: https://discord.gg/jwVVmBRd
 ## How to use: 
-1. [Download](https://github.com/Antraless/d2-afk-fishing/raw/main/fishing.exe) the script
+1. Download the script [here](https://github.com/Antraless/d2-afk-fishing/raw/main/fishing.exe)
 2. Run the script (two extra files will be created: `e.png` and `fishinglog.txt`)
    * You may have to press "More info" and then "Run anyway" if you get the "Windows protected your PC" prompt
 3. Open Destiny 2 and look in the top left
