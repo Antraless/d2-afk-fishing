@@ -25,7 +25,7 @@ else if (a_screenheight = 2160) {
 	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
 }
 else {
-	MsgBox, Your resolution is currently unsupported.`n`nContact Antra#6228 on Discord!
+	MsgBox, Your resolution is currently unsupported.`n`nFor support join: https://discord.gg/jwVVmBRd
 }
 
 
@@ -33,7 +33,7 @@ customcolor := "000000"
 gui +lastfound +alwaysontop -caption +toolwindow
 gui, color, %customcolor%
 gui, font, s32, verdana
-gui, add, text, vmytext cwhite, XXXXXXXXXXXXXXXXXXXXXXXXX`nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+gui, add, text, vmytext cwhite, XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 winset, transcolor, %customcolor% 255
 
 
@@ -43,7 +43,7 @@ updategui:
 if winactive("Destiny 2") {
     gui, show, x0 y0 noactivate 
     if (start = 0) {
-        guicontrol,, mytext, F2 to close, F4 to start fishing
+        guicontrol,, mytext, F2 to close, F4 to start fishing`nFor support join: https://discord.gg/jwVVmBRd
     } 
     else {
         guicontrol,, mytext, F2 to close, F3 to pause fishing`nFish caught this run: %fish%
@@ -90,7 +90,7 @@ F4:: ; press F4 to start the script
                 }
                 else if (errorlevel = 1) {
 					fails++
-					FileAppend, "E" could not be found on the screen!`n, fishinglog.txt
+					FileAppend, "E" could not be found on the screen! For support join: https://discord.gg/jwVVmBRd`n, fishinglog.txt
                 }
 				else {
                     fails = 0
