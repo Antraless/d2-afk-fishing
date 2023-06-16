@@ -1,5 +1,4 @@
 # For support: https://discord.gg/jwVVmBRd
-<3 from Antra
 ## How to use: 
 1. [Download](https://github.com/Antraless/d2-afk-fishing/raw/main/fishing.exe) the script
 2. Run the script (two extra files will be created: `e.png` and `fishinglog.txt`)
