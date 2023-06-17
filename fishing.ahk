@@ -13,11 +13,11 @@ else if (a_screenheight = 1080) {
 	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
 }
 else if (a_screenheight = 1440) {
-	UrlDownloadToFile, https://www.dropbox.com/s/s7raqlhflem3mnr/1440e.png?dl=1, e.png
+	UrlDownloadToFile, https://www.dropbox.com/s/p6hys484onl3zea/1440e.png?dl=1, e.png
 	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
 }
 else if (a_screenheight = 1600) {
-	UrlDownloadToFile, https://www.dropbox.com/s/s7raqlhflem3mnr/1600e.png?dl=1, e.png
+	UrlDownloadToFile, https://www.dropbox.com/s/8vv34h9zmpyuoyy/1600e.png?dl=1, e.png
 	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
 }
 else if (a_screenheight = 2160) {
@@ -83,7 +83,7 @@ F4:: ; press F4 to start the script
                 reload
             }
             else {
-                imagesearch, Px, Py, a_screenwidth*0.35, a_screenheight*0.5, a_screenwidth*0.55, a_screenheight*0.75, *70, e.png
+                imagesearch, Px, Py, a_screenwidth*0.35, a_screenheight*0.45, a_screenwidth*0.6, a_screenheight*0.75, *70, e.png
                 if (errorlevel = 2) {
 					MsgBox, imagesearch could not run, try running as administrator?
 					FileAppend, Could not conduct the search!`n, fishinglog.txt
