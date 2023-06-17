@@ -72,7 +72,7 @@ F3:: ; press F3 to pause the script
 
 F4:: ; press F4 to start the script
 {
-	FileAppend, Script started`nVersion: %a_ahkversion%`nWidth: %a_screenwidth%`nHeight: %a_screenheight%`n, fishinglog.txt
+	FileAppend, Script started`nAVersion: %a_ahkversion% SVersion:1.0.0`nWidth: %a_screenwidth%`nHeight: %a_screenheight%`n, fishinglog.txt
     fish = 0
     start = 1
     loop {
