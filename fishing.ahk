@@ -83,7 +83,7 @@ F4:: ; press F4 to start the script
                 reload
             }
             else {
-                imagesearch, Px, Py, a_screenwidth*0.35, a_screenheight*0.45, a_screenwidth*0.6, a_screenheight*0.75, *70, e.png
+                imagesearch, Px, Py, a_screenwidth*0.35, a_screenheight*0.45, a_screenwidth*0.65, a_screenheight*0.8, *70, e.png
                 if (errorlevel = 2) {
 					MsgBox, imagesearch could not run, try running as administrator?
 					FileAppend, Could not conduct the search!`n, fishinglog.txt
