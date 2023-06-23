@@ -77,7 +77,7 @@ F3:: ; press F3 to pause the script
 
 F4:: ; press F4 to start the script
 {
-	FileAppend, Script started`nAVersion: %a_ahkversion% SVersion:1.0.0`nWidth: %a_screenwidth%`nHeight: %a_screenheight%`n, fishinglog.txt
+	FileAppend, Script started`nAVersion: %a_ahkversion% SVersion:1.0.1`nWidth: %a_screenwidth%`nHeight: %a_screenheight%`n, fishinglog.txt
     fish = 0
     start = 1
     loop {
@@ -90,7 +90,7 @@ F4:: ; press F4 to start the script
             else {
                 imagesearch, Px, Py, a_screenwidth*0.35, a_screenheight*0.45, a_screenwidth*0.65, a_screenheight*0.8, *70, e.png
                 if (errorlevel = 2) {
-					MsgBox, imagesearch could not run, try running as administrator?
+					MsgBox, imagesearch could not run, try running as administrator?`n`nTry replacing the e.png file with a screenshot of the "E" on your screen. It must be named e.png!
 					FileAppend, Could not conduct the search!`n, fishinglog.txt
                 }
                 else if (errorlevel = 1) {
