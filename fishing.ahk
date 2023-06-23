@@ -1,8 +1,13 @@
 #singleinstance force
+SetWorkingDir %A_ScriptDir%
 start = 0
 
 if FileExist("e.png") {
 	FileAppend, e.png found!`n, fishinglog.txt
+	FileGetSize, eSize, e.png
+	if (eSize < 125) {
+		MsgBox, Your e.png file is corrupt or incorrect.`n`nTry deleting it and reopening the script to download a new one. Alternatively take a screenshot of the "E" on your screen and place it with the name e.png in the same place as your script.`n`nFor support join: https://discord.gg/jwVVmBRd
+	}
 }
 else if (a_screenheight = 720) {
 	UrlDownloadToFile, https://www.dropbox.com/s/3uhczcnsasqvhf4/720e.png?dl=1, e.png
@@ -25,7 +30,7 @@ else if (a_screenheight = 2160) {
 	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
 }
 else {
-	MsgBox, Your resolution is currently unsupported.`n`nFor support join: https://discord.gg/jwVVmBRd
+	MsgBox, Your resolution is currently unsupported (or something is horribly wrong).`n`nFor support join: https://discord.gg/jwVVmBRd
 }
 
 
@@ -94,6 +99,7 @@ F4:: ; press F4 to start the script
                 }
 				else {
                     fails = 0
+					sleep, 20
 					FileAppend, "E" found on screen!`n, fishinglog.txt
                     break
                 }
