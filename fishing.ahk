@@ -6,7 +6,7 @@ if FileExist("e.png") {
 	FileAppend, e.png found!`n, fishinglog.txt
 	FileGetSize, eSize, e.png
 	if (eSize < 125) {
-		MsgBox, Your e.png file is corrupt or incorrect.`n`nTry deleting it and reopening the script to download a new one. Alternatively take a screenshot of the "E" on your screen and place it with the name e.png in the same place as your script.`n`nFor support join: https://discord.gg/jwVVmBRd
+		MsgBox, Your e.png file is corrupt or incorrect.`n`nTry deleting it and reopening the script to download a new one. Alternatively take a screenshot of the "E" on your screen and place it with the name e.png in the same place as your script.`n`nFor support join: https://discord.gg/KGyjysA5WY
 	}
 }
 else if (a_screenheight = 720) {
@@ -30,7 +30,7 @@ else if (a_screenheight = 2160) {
 	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
 }
 else {
-	MsgBox, Your resolution is currently unsupported (or something is horribly wrong).`n`nFor support join: https://discord.gg/jwVVmBRd
+	MsgBox, Your resolution is currently unsupported (or something is horribly wrong).`n`nFor support join: https://discord.gg/KGyjysA5WY
 }
 
 
@@ -48,7 +48,7 @@ updategui:
 if winactive("Destiny 2") {
     gui, show, x0 y0 noactivate 
     if (start = 0) {
-        guicontrol,, mytext, F2 to close, F4 to start fishing`nFor support join: https://discord.gg/jwVVmBRd
+        guicontrol,, mytext, F2 to close, F4 to start fishing`nFor support join: https://discord.gg/KGyjysA5WY
     } 
     else {
         guicontrol,, mytext, F2 to close, F3 to pause fishing`nFish caught this run: %fish%
@@ -95,7 +95,7 @@ F4:: ; press F4 to start the script
                 }
                 else if (errorlevel = 1) {
 					fails++
-					FileAppend, "E" could not be found on the screen! For support join: https://discord.gg/jwVVmBRd`n, fishinglog.txt
+					FileAppend, "E" could not be found on the screen! For support join: https://discord.gg/KGyjysA5WY`n, fishinglog.txt
                 }
 				else {
                     fails = 0
