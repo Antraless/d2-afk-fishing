@@ -1,8 +1,9 @@
 ## How to use: 
 1. Download the script [here](https://github.com/Antraless/d2-afk-fishing/raw/main/fishing.exe)
-2. Run the script (two extra files will be created: `e.png` and `fishinglog.txt`)
+2. Run the script (an extra file will be created: `fishinglog.txt`)
    * You may have to press "More info" and then "Run anyway" if you get the "Windows protected your PC" prompt
-3. Open Destiny 2 and look in the top left
+3. Take a screenshot and place it in the same place as the script. Name the image "`e.png`"
+4. Open Destiny 2 and look in the top left
 ## Script Keybinds: 
 - F4 to start fishing
 - F3 to pause the script (to do public events, or whatever. If D2 is not active (you tab out), the script will pause itself)
