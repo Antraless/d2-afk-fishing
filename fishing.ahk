@@ -2,38 +2,6 @@
 SetWorkingDir %A_ScriptDir%
 start = 0
 
-if FileExist("e.png") {
-	FileAppend, e.png found!`n, fishinglog.txt
-	FileGetSize, eSize, e.png
-	if (eSize < 125) {
-		MsgBox, Your e.png file is corrupt or incorrect.`n`nTry deleting it and reopening the script to download a new one. Alternatively take a screenshot of the "E" on your screen and place it with the name e.png in the same place as your script.`n`nFor support join: https://discord.gg/KGyjysA5WY
-	}
-}
-else if (a_screenheight = 720) {
-	UrlDownloadToFile, https://www.dropbox.com/s/3uhczcnsasqvhf4/720e.png?dl=1, e.png
-	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
-}
-else if (a_screenheight = 1080) {
-	UrlDownloadToFile, https://www.dropbox.com/s/s7raqlhflem3mnr/1080e.png?dl=1, e.png
-	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
-}
-else if (a_screenheight = 1440) {
-	UrlDownloadToFile, https://www.dropbox.com/s/p6hys484onl3zea/1440e.png?dl=1, e.png
-	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
-}
-else if (a_screenheight = 1600) {
-	UrlDownloadToFile, https://www.dropbox.com/s/8vv34h9zmpyuoyy/1600e.png?dl=1, e.png
-	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
-}
-else if (a_screenheight = 2160) {
-	UrlDownloadToFile, https://www.dropbox.com/s/piryg486wovy5dg/2160e.png?dl=1, e.png
-	FileAppend, file e.png not found so downloadeded it at %a_screenheight%!`n, fishinglog.txt
-}
-else {
-	MsgBox, Your resolution is currently unsupported (or something is horribly wrong).`n`nFor support join: https://discord.gg/KGyjysA5WY
-}
-
-
 customcolor := "000000"
 gui +lastfound +alwaysontop -caption +toolwindow
 gui, color, %customcolor%
