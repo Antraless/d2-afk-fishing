@@ -1,5 +1,5 @@
-# This doesn't really work anymore.
-For a more updated version, join here [https://discord.gg/jwVVmBRd](https://discord.gg/KGyjysA5WY) or you can try this one anyway! I'm not gonna stop you.
+# This version sucks!
+For a better version, join here [https://discord.gg/jwVVmBRd](https://discord.gg/KGyjysA5WY) or go here [https://github.com/Antraless/tabbed-out-fishing](https://github.com/Antraless/tabbed-out-fishing) or you can try this one anyway! I'm not gonna stop you.
 ## How to use: 
 1. Download the script [here](https://github.com/Antraless/d2-afk-fishing/raw/main/fishing.exe)
 2. Run the script (an extra file will be created: `fishinglog.txt`)
